@@ -1,38 +1,74 @@
-# Dashboard de Vendas (Power BI)
+# Dashboard de Vendas - Power BI
 
 ## Objetivo
-Analisar dados de vendas para identificar padrões, oportunidades e apoiar a tomada de decisão.
+Analisar dados de vendas para identificar padrões de receita, lucratividade, canais de venda, desempenho por região, categoria e produto.
 
-## Ferramentas
+## Ferramentas utilizadas
 - Power BI
 - DAX
-- Excel/CSV
+- CSV/Excel
+- Modelagem de dados
+- Análise de indicadores
 
-## Principais Indicadores (KPIs)
-- Receita total
-- Total de vendas
-- Ticket médio
+## Dataset
+O dataset foi gerado de forma fictícia, simulando vendas entre 2024 e 2025.
 
-## Análises
-- Receita por período
+### Colunas principais
+- data
+- produto
+- categoria
+- regiao
+- canal_venda
+- tipo_cliente
+- vendedor
+- quantidade
+- preco_unitario
+- receita_liquida
+- custo_total
+- lucro
+- status
+
+## KPIs sugeridos
+- Receita Total
+- Lucro Total
+- Total de Vendas
+- Ticket Médio
+- Margem de Lucro %
+- Taxa de Cancelamento %
+
+## Análises realizadas
+- Evolução mensal da receita
 - Receita por região
-- Performance por categoria
-- Top produtos
-
-## Insights possíveis
-- Identificação das regiões mais lucrativas
-- Produtos com maior desempenho
-- Sazonalidade das vendas
+- Receita por categoria
+- Top produtos por receita
+- Receita por canal de venda
+- Lucratividade por categoria e produto
+- Desempenho por vendedor
 
 ## Estrutura do projeto
-- Dataset em CSV
-- Dashboard em Power BI (.pbix)
-- Imagens do dashboard
 
-## Como utilizar
-1. Baixe o arquivo .pbix
-2. Abra no Power BI Desktop
-3. Explore os dashboards interativos
+dashboard-vendas-powerbi/
+├── dataset/
+│   ├── vendas_powerbi.csv
+│   └── vendas_powerbi.xlsx
+├── docs/
+│   ├── medidas_dax.md
+│   └── roteiro_dashboard_powerbi.md
+├── dashboard/
+│   └── coloque_aqui_o_arquivo_pbix.txt
+├── imagens/
+│   └── coloque_aqui_os_prints_do_dashboard.txt
+└── README.md
+```
+
+## Como usar
+1. Abra o Power BI Desktop
+2. Importe o arquivo `dataset/vendas_powerbi.csv`
+3. Renomeie a tabela para `Vendas`
+4. Crie as medidas DAX disponíveis em `docs/medidas_dax.md`
+5. Monte os gráficos seguindo `docs/roteiro_dashboard_powerbi.md`
+6. Salve o arquivo `.pbix` na pasta `dashboard`
+7. Exporte prints do dashboard para a pasta `imagens`
 
 ## Autor
 Guilherme Luan Fernandes
